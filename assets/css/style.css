@@ -446,6 +446,24 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume .section-title i{
+  vertical-align: bottom;
+}
+
+.resume .section-title a span{
+  display: none;
+}
+
+.resume .section-title a:hover span{
+  font-size: .75rem;
+  display: inline;
+  position: relative;
+  background: #ffffff;
+  color: #6c6c6c;
+  top: 17px;
+  left: -52px;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
