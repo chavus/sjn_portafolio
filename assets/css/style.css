@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  /* background: #040b14; */
+  background:black;
   overflow-y: auto;
 }
 #header .profile img {
@@ -93,17 +94,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 40px;
   display: inline-block;
   background: #212431;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 5px 0;
+  margin-right: 15px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
@@ -198,12 +199,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background-color: #0f1822; */
-  background: url("../img/profile/mern_python.jpg") top center;
-  background-size:initial;
+  background-color: black !important;
+  background: url("../img/profile/sw2.jpg") ;
+  /* background-position: center; */
+  background-size:cover;
   object-position:center;
-  background-position-x: -1rem;
-  /* background-repeat: no-repeat; */
+  /* background-position-x: -1rem; */
+  
+  background-repeat: no-repeat;
 }
 #hero:before {
   content: "";
@@ -281,7 +284,8 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 0px;
   overflow: hidden;
 }
 
@@ -317,6 +321,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: #f5f8fd;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -393,7 +400,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -484,7 +491,7 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #050d18;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .resume .resume-item h5 {
   font-size: 16px;
@@ -492,13 +499,16 @@ section {
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .resume .resume-item ul {
   padding-left: 20px;
 }
+.resume .resume-item .company{
+  margin-bottom: 0px;
+}
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
